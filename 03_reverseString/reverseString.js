@@ -7,5 +7,7 @@ const reverseString = function(input) {
     return out;
 };
 
+//not to self: meg van .reverse() function ami egy listet reversel, es akkor pl input.split("").reverse().join("")
+
 // Do not edit below this line
 module.exports = reverseString;
