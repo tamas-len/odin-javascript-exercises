@@ -1,6 +1,14 @@
-const removeFromArray = function(input, filt) {
+const removeFromArray = function(input) {
     let out = [];
-    out = input.filter(number => number !== filt);
+    filt = Array.from(arguments);
+    filt.shift();
+
+    for (let i = 0; i <= filt.length; i++)
+    {
+        out = input;
+        out = out.filter(number => number !== filt[i]);
+    }
+
     return out;
 };
 
