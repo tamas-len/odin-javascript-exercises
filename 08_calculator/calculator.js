@@ -18,8 +18,15 @@ const power = function(num, power) {
   return Math.pow(num, power)
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	let fact = 1;
+
+  for (let i = 1; i <= num; i++)
+  {
+    fact = fact * i;
+  }
+
+  return fact
 };
 
 // Do not edit below this line
