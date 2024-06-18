@@ -1,13 +1,10 @@
 const palindromes = function (tested) {
-    //turns word into array
+    //turns word into array and reverses it
     let testedArr = tested.split('').reverse();
-    return testedArr
 
     //filtereli a punctuationt meg a szokozoket meg a szamokat meg mindent egy masik arraybol
 
-    //megforditja az arrayt
-
-    //visszairja szova
+    //visszairja szovas
 
     //checks if its the same shit
 };
