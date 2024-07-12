@@ -1,6 +1,6 @@
 const palindromes = function (tested) {
     //turns word into array and reverses it
-    let testedArr = tested.split('').reverse();
+    let testedArr = tested.split('');
 
     //filtereli a punctuationt meg a szokozoket meg a szamokat meg mindent egy masik arraybol
     let punct = [" ", "!", ";", ".", ","];
@@ -13,7 +13,9 @@ const palindromes = function (tested) {
     const palindrome = testedArr.filter(isPunct);
 
     //visszairja szova es checkeli hgy ugyanaz-e
-    return tested == palindrome.join("");
+    return palindrome == palindrome.reverse();
+
+    return palindrome;
 };
 
 // Do not edit below this line
