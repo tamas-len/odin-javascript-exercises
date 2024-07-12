@@ -3,7 +3,7 @@ const palindromes = function (tested) {
     let testedArr = tested.split('');
 
     //filtereli a punctuationt meg a szokozoket meg a szamokat meg mindent egy masik arraybol
-    let punct = [" ", "!", ";", ".", ","];
+    let punct = ".,!;0123456789";
 
     function isPunct(val)
     {
@@ -15,7 +15,7 @@ const palindromes = function (tested) {
     //visszairja szova es checkeli hgy ugyanaz-e
     return palindrome == palindrome.reverse();
 
-    return palindrome;
+    //return palindrome.reverse();
 };
 
 // Do not edit below this line
