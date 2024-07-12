@@ -12,11 +12,8 @@ const palindromes = function (tested) {
 
     const palindrome = testedArr.filter(isPunct);
 
-    return palindrome;
-
-    //visszairja szovas
-
-    //checks if its the same shit
+    //visszairja szova es checkeli hgy ugyanaz-e
+    return tested == palindrome.join("");
 };
 
 // Do not edit below this line
