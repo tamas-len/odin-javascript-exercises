@@ -12,10 +12,13 @@ const palindromes = function (tested) {
 
     const palindrome = testedArr.filter(isPunct);
 
-    //visszairja szova es checkeli hgy ugyanaz-e
-    return palindrome == palindrome.reverse();
+    const compareArrays = (a, b) => {
+        return a.toString() === b.toString();
+    };
 
-    //return palindrome.reverse();
+    //const pal_rev = palindrome.reverse();
+
+    return compareArrays(palindrome.toString(), palindrome.reverse().toString());
 };
 
 // Do not edit below this line
