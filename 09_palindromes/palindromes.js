@@ -16,9 +16,7 @@ const palindromes = function (tested) {
         return a.toString() === b.toString();
     };
 
-    //const pal_rev = palindrome.reverse();
-
-    return compareArrays(palindrome.toString(), palindrome.reverse().toString());
+    return compareArrays(palindrome.toString().toLowerCase(), palindrome.reverse().toString().toLowerCase());
 };
 
 // Do not edit below this line
