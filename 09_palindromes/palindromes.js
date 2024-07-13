@@ -3,7 +3,7 @@ const palindromes = function (tested) {
     let testedArr = tested.split('');
 
     //filtereli a punctuationt meg a szokozoket meg a szamokat meg mindent egy masik arraybol
-    let punct = ".,!;0123456789";
+    let punct = " .,!;0123456789";
 
     function isPunct(val)
     {
