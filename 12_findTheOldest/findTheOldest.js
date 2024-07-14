@@ -1,3 +1,6 @@
+//maybe make another function for getting age and then store age and compare based on that
+//so u wont get lost in all the object shit
+
 const findTheOldest = function(ppl) {
     let oldest = 0;
 
