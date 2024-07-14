@@ -6,7 +6,17 @@ const fibonacci = function(num) {
         fib.push(fib[fib.length-1] + fib[fib.length-2]);
     }
 
-    return fib[num-1];
+    if(num < 0)
+    {
+        return "OOPS"
+    }
+
+    if(num == 0)
+        return 0;
+    else
+    {
+        return fib[num-1];   
+    }
 };
 
 // Do not edit below this line
